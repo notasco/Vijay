@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+	<configuration>
+		<!-- report theme -->
+		<!-- standard, dark -->
+		<theme>dark</theme>
+
+		<!-- document encoding -->
+		<!-- defaults to UTF-8 -->
+		<encoding>UTF-8</encoding>
+
+		<!-- protocol for script and stylesheets -->
+		<!-- defaults to https -->
+		<protocol>https</protocol>
+
+		<!-- title of the document -->
+		<documentTitle>ExtentReport</documentTitle>
+
+		<!-- report name - displayed at top-nav -->
+		<reportName>Automation Report</reportName>
+
+		<!-- location of charts in the test view -->
+		<!-- top, bottom -->
+		<testViewChartLocation>bottom</testViewChartLocation>
+
+		<!-- custom javascript -->
+		<scripts>    
+     <![CDATA[
+             $(document).ready(function(){
+             });   
+            ]]>
+		</scripts>
+		<styles>
+        <![CDATA[
+        ]]>
+		</styles>
+
+ <!-- other configurations -->
+    <extent:reporter sparkViewOrder="dashboard, test, category, exception, device, smoke" />
+    <extent:reporter sparkBase64Imagesrc="true" />
+    <!-- other configurations -->
+	</configuration>
+</extentreports>
